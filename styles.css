@@ -1,0 +1,140 @@
+:root {
+    --primary: #2563eb;
+    --background: #f9fafb;
+    --card-bg: #ffffff;
+    --text-dark: #1e293b;
+    --text-light: #64748b;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background);
+    color: var(--text-dark);
+    line-height: 1.6;
+  }
+  
+  header {
+    background: var(--primary);
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  header p {
+    font-size: 1.1rem;
+    color: #e0e7ff;
+  }
+  
+  nav {
+    margin-top: 1.5rem;
+  }
+  
+  nav a {
+    color: #bfdbfe;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: white;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  .profile-pic {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 1rem auto;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: 4px solid white;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .card {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+    color: var(--primary);
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 0.75rem;
+  }
+  
+  .contact-list li i {
+    margin-right: 10px;
+    color: var(--primary);
+  }
+  
+  footer {
+    background: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 2rem;
+    }
+    .card {
+      padding: 1.5rem;
+    }
+  }
+
+  .certificate-list {
+    padding-left: 0;
+    list-style: none;
+  }
+  .certificate-list li {
+    margin-bottom: 1.5rem;
+    background: #f1f5f9;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  .certificate-list a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .certificate-list a:hover {
+    text-decoration: underline;
+  }
+  
