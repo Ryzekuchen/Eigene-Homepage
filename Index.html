@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marcel Baumgardt – Portfolio</title>
+  <meta name="description" content="Marcel Baumgardt – Fachinformatiker in Ausbildung. Portfolio, Lebenslauf und Projekte." />
+  <meta property="og:title" content="Marcel Baumgardt – Portfolio" />
+  <meta property="og:description" content="Softwareentwickler in Ausbildung, Python, Java, MySQL." />
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Haupt‐CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    /* Smooth Scroll für Ankerlinks */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <h1>Marcel Baumgardt</h1>
+      <button id="nav-toggle" class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav id="nav-menu">
+        <a href="#ueber">Über mich</a>
+        <a href="#cv">Lebenslauf</a>
+        <a href="#zertifikate">Zertifikate</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img
+      src="Medien.jfif"
+      alt="Profilbild von Marcel Baumgardt"
+      class="profile-pic"
+      loading="lazy"
+    />
+    <p>Willkommen auf meiner persönlichen Seite! Hier erfährst du mehr über meinen beruflichen Weg, meine Qualifikationen und wie du mich erreichen kannst.</p>
+  </section>
+
+  <div class="container">
+    <section id="ueber" class="card">
+      <h2>Über mich</h2>
+      <p>Hallo! Ich bin Marcel Baumgardt, 30 und wohne in Aalen. Aktuell befinde ich mich in einer Umschulung zum Fachinformatiker für Anwendungsentwicklung bei GFN in Stuttgart.</p>
+      <p>Technische Herausforderungen werden mit strukturiertem Denken und lösungsorientiertem Vorgehen angegangen – sowohl im Backend als auch im Bereich Datenbankentwicklung. Eine zuverlässige und teamorientierte Arbeitsweise sowie die Bereitschaft zur kontinuierlichen Weiterbildung bilden die Grundlage für eine nachhaltige berufliche Entwicklung.</p>
+      <h3>Meine Programmierskills im Überblick:</h3>
+      <ul>
+        <li><strong>Sprachen:</strong> Python, Java, HTML/CSS</li>
+        <li><strong>Datenbanken:</strong> MySQL – Erstellung & Verwaltung</li>
+        <li><strong>Tools & Methoden:</strong> Git, Scrum, MS Office</li>
+      </ul>
+      <p>Du findest meine Projekte und Codebeispiele auf GitHub:</p>
+      <p><a class="github-btn" href="https://github.com/Ryzekuchen?tab=repositories" target="_blank">
+          <i class="fa-brands fa-github"></i> Zu meinen Projekten
+        </a></p>
+    </section>
+
+    <section id="cv" class="card">
+      <h2>Lebenslauf</h2>
+      <ul>
+        <li><strong>Seit 02/2024:</strong> Umschulung Fachinformatiker – GFN, Stuttgart</li>
+        <li><strong>10/2023 – 01/2024:</strong> Vorbereitungskurs – GFN, Stuttgart</li>
+        <li><strong>10/2018 – 04/2023:</strong> Ostalb Klinikum Aalen – Warenannahme & Stationsbelieferung</li>
+        <li><strong>03/2018 – 09/2018:</strong> Kommissionierer bei Omega Sorg</li>
+        <li><strong>08/2013 – 12/2017:</strong> Teamleitung in der Bäckerei Mack</li>
+        <li><strong>10/2010 – 08/2013:</strong> Bäckerausbildung bei Braunger</li>
+        <li><strong>2005 – 2010:</strong> Hauptschule – Talschule Aalen</li>
+      </ul>
+    </section>
+
+    <section id="zertifikate" class="card">
+      <h2>Zertifikate</h2>
+      <ul class="certificate-list">
+        <li>
+          <strong>Python Zertifikat</strong><br>
+          <a href="certificate_sxj6.AauW.dLK2.pdf" target="_blank">📄 Herunterladen (PDF)</a>
+        </li>
+        <li>
+            <strong>SQL Zertifikat</strong><br>
+            <a href="marcelCertificate_SQL-Island.pdf" target="_blank">📄 Herunterladen (PDF)</a>
+          </li>
+      </ul>
+    </section>
+
+    <section id="kontakt" class="card">
+      <h2>Kontakt</h2>
+      <ul class="contact-list">
+        <li><i class="fa-solid fa-envelope"></i> <a href="mailto:marcel.baumgardt24@gmail.com">marcel.baumgardt24@gmail.com</a></li>
+        <li><i class="fa-solid fa-location-dot"></i> 73433 Aalen</li>
+        <li><i class="fa-solid fa-globe"></i> Deutsch, Englisch</li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Marcel Baumgardt – Entwickelt mit ❤️</p>
+  </footer>
+
+  <script>
+    // Hamburger-Menu Toggle
+    const toggle = document.getElementById('nav-toggle');
+    const menu  = document.getElementById('nav-menu');
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
